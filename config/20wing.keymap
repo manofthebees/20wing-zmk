@@ -20,8 +20,8 @@
 
         layer0 {
             bindings = <
-&kp Q  &kp W  &kp E      &kp R      &kp T      &kp Y     &kp U  &kp I
-&kp A  &kp S  &kp D      &kp F      &kp G      &kp H     &kp J  &kp K
+&kp R  &kp S  &kp N      &kp I      &kp I      &kp N     &kp S  &kp R
+&kp A  &kp O  &kp T      &kp E      &kp E      &kp T     &kp O  &kp A
               &kp LCTRL  &kp LSHFT  &kp SPACE  &kp BSPC
             >;
         };
