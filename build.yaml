@@ -1,6 +1,6 @@
 ---
 include:
   - board: xiao_ble
-    shield: 4x3
+    shield: 20wing
   - board: xiao_ble
     shield: settings_reset
