@@ -6,6 +6,14 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1650  // default is 600
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 1 17 6 7 18 16 19>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
