@@ -1,0 +1,6 @@
+if SHIELD_20WING
+
+config ZMK_KEYBOARD_NAME
+    default "20wing"
+
+endif

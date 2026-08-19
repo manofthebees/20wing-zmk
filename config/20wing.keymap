@@ -1,0 +1,58 @@
+#include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1650  // default is 600
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <2 5 8 11 1 0>;
+        };
+
+        gaming_trigger {
+            bindings = <&tog 1>;
+            key-positions = <0 1 2 9 11 10>;
+        };
+
+        nav_trigger {
+            bindings = <&tog 2>;
+            key-positions = <9 11 7>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&kp N7  &kp N8  &kp N9
+&kp N4  &kp N5  &kp N6
+&kp N1  &kp N2  &kp N3
+&kp F2  &kp N0  &kp BSPC
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp R  &kp F  &kp SPACE
+&kp E  &kp D  &kp LSHFT
+&kp W  &kp S  &kp TAB
+&kp Q  &kp A  &kp ESC
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans          &kp UP_ARROW  &trans
+&kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+&trans          &trans        &trans
+&trans          &trans        &kp ENTER
+            >;
+        };
+    };
+};

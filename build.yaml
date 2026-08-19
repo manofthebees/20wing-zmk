@@ -1,0 +1,6 @@
+---
+include:
+  - board: xiao_ble
+    shield: 4x3
+  - board: xiao_ble
+    shield: settings_reset
